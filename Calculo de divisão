@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main () {
+printf("Divisão");
+
+float valor1, valor2;
+
+printf("\\nDigite o primeiro número: ");
+    scanf("%f", &valor1);
+
+printf("\\nDigite o segundo número: ");
+    scanf("%f", &valor2);
+
+printf("\\nO resultado da divisão é: %0.3f", valor1/valor2);
+}
