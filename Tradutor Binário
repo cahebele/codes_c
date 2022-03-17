@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<locale.h>
+
+void bin(int n){
+     if(n == 0)
+          printf("%d",n);
+     else{
+          bin(n/2);
+          printf("%d",n % 2 );
+     }
+}
+
+int main (){
+     char letra;
+     int num;
+
+     printf("\nEscreva a letra que deseja transformar em numero binario: \n");
+          scanf("%c", &letra);
+
+     printf("\nCodigo da letra = %d. \n",letra);
+
+
+     printf("\nDigite o valor da sua resposta anterior: \n");
+     scanf("%d", &num);
+
+     bin (num);
+
+     return 0;
+}
