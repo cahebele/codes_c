@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main(){
+    float areaT, bMaior, bMenor, altura;
+    
+    printf("\nInforme o valor da base maior do trapezio: ");
+    scanf("%f", &bMaior);
+    
+    printf("\nInforme o valor da base menor do trapezio: ");
+    scanf("%f", &bMenor);
+    
+    printf("\nInforme a altura do trapezio: ");
+    scanf("%f", &altura);
+    
+    areaT = ((bMaior+bMenor)*altura)/2;
+    
+    printf("\nArea do trapezio: %.2f", areaT);
+    
+    return 0;
+
+}
